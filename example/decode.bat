@@ -1,0 +1,1 @@
+call java -jar ../dist/conf-decoder-1.0-SNAPSHOT-all.jar --src1=./conf/1d --src2=./conf/2d --proto_out=./output --bytes_out=./output --pkg=top.chancy.game --wrapper=ConfCenter

@@ -1,0 +1,55 @@
+syntax = "proto3";
+package top.chancy.game;
+message Global{
+	//int测试
+	int32 IntValue = 1;
+}
+message FuckConf{
+	//double数组测试
+	repeated double DoubleArrayValue = 1;
+	//int数组测试
+	repeated int32 IntArrayValue = 2;
+	//long数组测试
+	repeated int64 longArrayValue = 3;
+	//bool数组测试
+	repeated bool boolArrayValue = 4;
+	//string数组测试
+	repeated string stringArrayValue = 5;
+	//enum测试
+	TestEnum enumValue = 6;
+	//map测试
+	map<int32,string> mapValue = 7;
+}
+message TestConf{
+	//double测试
+	double DoubleValue = 1;
+	//double数组测试
+	repeated double DoubleArrayValue = 2;
+	//int测试
+	int32 IntValue = 3;
+	//int数组测试
+	repeated int32 IntArrayValue = 4;
+	//long测试
+	int64 longValue = 5;
+	//long数组测试
+	repeated int64 longArrayValue = 6;
+	//bool测试
+	bool boolValue = 7;
+	//bool数组测试
+	repeated bool boolArrayValue = 8;
+	//string测试
+	string stringValue = 9;
+	//string数组测试
+	repeated string stringArrayValue = 10;
+	//enum测试
+	TestEnum enumValue = 11;
+}
+enum TestEnum{
+	TYPE_A = 0;
+	TYPE_B = 1;
+}
+message ConfCenter{
+	Global globalConf = 1;
+	repeated FuckConf fuckConfConfList = 2;
+	repeated TestConf testConfConfList = 3;
+}
