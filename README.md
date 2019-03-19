@@ -25,4 +25,5 @@ Decode one/two dimensional config table into protobuf structure and bytes file a
     |    double[]       |   repeated double |    List<Double>   | Use comma to split up. eg. 3.14,3.1415                 
     |      bool[]       |   repeated bool   |    List<Boolean>  | Use comma to split up. eg. y,n,y 
     |    string[]       |   repeated string |    List<String>   | Use comma to split up. eg. John,Rick
-    |    xxx:xxx        |    map<xxx,xxx>   |    Map<xxx,xxx>   | Use colon to split key and value.Use comma to split Key-vale pairs. eg. 1:John,2:Rick
+    |     xxx:xxx       |    map<xxx,xxx>   |    Map<xxx,xxx>   | Use colon to split key and value.Use comma to split Key-vale pairs. eg. 1:John,2:Rick
+    |  {SomeEnum}       |     SomeEnum      |     SomeEnum      | Will auto create a enumeration named "SomeEnum".
