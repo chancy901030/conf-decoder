@@ -1,10 +1,10 @@
 # What is this?
-Decode one/two dimensional config table into protobuf structure and bytes file at the same time
+A tool that can decode one/two dimensional config tables into protobuf structure and bytes file at the same time.
 
 ## Usage
     * 1.Make sure jdk1.8 is installed
     * 2.Run like this 
-            >java -jar conf-decoder
+            >java -jar conf-decoder-1.0-SNAPSHOT-all.jar
             > --src1=null  //path for one dimensional tables,default null
             > --src2=. //path for two dimensional tables
             > --proto_out=. //path for proto files outputs
@@ -13,7 +13,7 @@ Decode one/two dimensional config table into protobuf structure and bytes file a
             > --wrapper=ConfCenter //wrapper class name
 
 ## Supported field type
-    | cinfig field type |   protobuf type   |     java type     | description                                         
+    | config field type |   protobuf type   |     java type     | description                                         
     |:-----------------:|:-----------------:|:-----------------:|:----------------------------:
     |      int          |      int32        |      int          |                              
     |      long         |      int64        |      long         |                              
